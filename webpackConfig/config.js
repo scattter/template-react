@@ -1,5 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
+const { DefinePlugin } = require('webpack')
 
 module.exports = {
   mode: 'development',
@@ -31,7 +33,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'react template',
       template: path.resolve(__dirname, '../publish/index.html')
+    }),
+    new ReactRefreshWebpackPlugin(),
+    new DefinePlugin({
+      BASE_URL: '"./"'
     })
   ]
 }

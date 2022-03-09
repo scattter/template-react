@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <>
-      <h1>APP demo</h1>
+      <h1>APP demo 3 5 7</h1>
       <h2>{Demo.first}</h2>
       <span>count is {count}</span>
       <button className='button' onClick={() => setCount((c) => c + 1)}>add</button>

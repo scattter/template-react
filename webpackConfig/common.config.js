@@ -2,6 +2,9 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { DefinePlugin } = require('webpack')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const chalk = require('chalk')
+const ProgressBarPlugin = require('progress-bar-webpack-plugin')
+const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = {
   resolve: {
@@ -32,7 +35,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          devMode ? "style-loader" : MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -62,7 +65,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          devMode ? "style-loader" : MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader',
           'sass-loader'
@@ -81,10 +84,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'css/[name].[chunkhash:8].css'
     }),
+    new ProgressBarPlugin({
+      format: `  :msg [:bar] ${chalk.green.bold(':percent')} (:elapsed s)`
+    })
   ],
-  optimization: {
-    splitChunks: {
-      chunks: 'all'
-    }
-  }
+  stats: 'errors-only'
 }

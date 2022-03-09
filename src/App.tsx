@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
 import '@/index.scss'
+import {Demo} from "./constant"
 
 const App = () => {
   const [count, setCount] = useState(0)
-  
+
   return (
     <>
-      <h1>APP</h1>
-      <h2>qwe</h2>
+      <h1>APP demo</h1>
+      <h2>{Demo.first}</h2>
       <span>count is {count}</span>
       <button className='button' onClick={() => setCount((c) => c + 1)}>add</button>
     </>

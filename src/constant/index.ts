@@ -1,3 +1,3 @@
 export enum Demo {
-  first = 1
+  first = 1,
 }

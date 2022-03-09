@@ -1,0 +1,6 @@
+/public
+/dist
+/node_modules
+/webpackConfig
+/.idea
+babel.config.js

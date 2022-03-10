@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test App.tsx snapshot test 1`] = `
+<Fragment>
+  <h1>
+    APP demo 3 5 7
+  </h1>
+  <h2>
+    1
+  </h2>
+  <span>
+    count is 
+    0
+  </span>
+  <button
+    className="button"
+    onClick={[Function]}
+  >
+    add
+  </button>
+  <Home />
+</Fragment>
+`;

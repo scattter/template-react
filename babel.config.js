@@ -6,7 +6,10 @@ module.exports = (envVars) => {
       {
         "modules": false,
         "useBuiltIns": "usage",
-        "corejs": "3"
+        "corejs": "3",
+        "targets": {
+          "node": "current"
+        }
       }
     ],
     [
@@ -25,7 +28,8 @@ module.exports = (envVars) => {
       {
         "corejs": 3
       }
-    ]
+    ],
+    ['@babel/plugin-transform-modules-commonjs']
   ];
   
   // 只有在dev环境的时候添加react-refresh插件

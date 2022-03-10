@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '@/index.scss';
 import { Demo } from './constant';
+import { Home } from './pages/home';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -13,6 +14,7 @@ const App = () => {
       <button className="button" onClick={() => setCount((c) => c + 1)}>
         add
       </button>
+      <Home />
     </>
   );
 };

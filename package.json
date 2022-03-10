@@ -8,8 +8,9 @@
     "dev": "tsc && cross-env NODE_ENV=development webpack server --config webpackConfig/dev.config.js",
     "build": "tsc && cross-env NODE_ENV=production webpack --config webpackConfig/prod.config.js",
     "tsc": "tsc",
-    "eslint": "eslint --fix src --ext .ts,.tsx",
-    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json}\""
+    "eslint": "eslint --fix src --ext .{js,jsx,ts,tsx,json}",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -42,6 +43,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.2",
     "mini-css-extract-plugin": "^2.5.3",
     "postcss": "^8.4.7",
     "postcss-loader": "^6.2.1",
@@ -62,5 +65,8 @@
   "browserslist": [
     "> 1%",
     "not ie <= 8"
-  ]
+  ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "npm run eslint"
+  }
 }

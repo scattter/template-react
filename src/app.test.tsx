@@ -1,4 +1,5 @@
 import { shallow, ShallowWrapper } from 'enzyme';
+
 import App from './App';
 
 describe('test App.tsx', () => {

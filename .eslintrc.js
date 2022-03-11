@@ -26,10 +26,13 @@ module.exports = {
   rules: {
     // 自定义您的规则
     // Customize your rules
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
   settings: {
     react: {
       version: 'detect',
     },
   },
+  plugins: ['simple-import-sort'],
 };

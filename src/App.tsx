@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
 import '@/index.scss';
+
+import React, { useState } from 'react';
+
 import { Demo } from './constant';
 import { Home } from './pages/home';
 

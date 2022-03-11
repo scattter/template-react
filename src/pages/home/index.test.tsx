@@ -1,4 +1,5 @@
 import { shallow, ShallowWrapper } from 'enzyme';
+
 import { Home } from './index';
 
 describe('test Home page', () => {

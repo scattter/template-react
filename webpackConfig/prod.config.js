@@ -23,7 +23,7 @@ module.exports = merge(CommonConfig, {
   optimization: {
     minimizer: [
       // 在 webpack@5 中，你可以使用 `...` 语法来扩展现有的 minimizer（即 `terser-webpack-plugin`），将下一行取消注释
-      // `...`,
+      '...',
       new CssMinimizerPlugin(),
     ],
     splitChunks: {

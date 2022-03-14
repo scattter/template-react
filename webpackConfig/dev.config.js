@@ -6,6 +6,7 @@ module.exports = merge(CommonConfig, {
   mode: 'development',
   devtool: 'cheap-module-source-map',
   devServer: {
+    static: './dist',
     hot: true,
     open: true,
     port: 9000

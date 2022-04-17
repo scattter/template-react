@@ -9,7 +9,8 @@ module.exports = merge(CommonConfig, {
     static: './dist',
     hot: true,
     open: true,
-    port: 9000
+    port: 9000,
+    historyApiFallback: true,
   },
   plugins: [
     new ReactRefreshWebpackPlugin()

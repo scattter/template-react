@@ -1,24 +1,17 @@
-import { shallow, ShallowWrapper } from 'enzyme';
+import { render } from '@testing-library/react';
+import { createMemoryHistory } from 'history';
+import { Router } from 'react-router-dom';
 
 import App from './App';
 
 describe('test App.tsx', () => {
-  let wrapper: ShallowWrapper;
-
-  beforeEach(() => {
-    wrapper = shallow(<App />);
-  });
-
   it('snapshot test', () => {
+    const history = createMemoryHistory({ initialEntries: ['/'] });
+    const wrapper = render(
+      <Router location={history.location} navigator={history}>
+        <App />
+      </Router>,
+    );
     expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should success increment count when click button', async () => {
-    const span = wrapper.find('span').first();
-    expect(span.text()).toEqual('count is 0');
-    wrapper.find('button').first().simulate('click');
-    await (() => {
-      expect(span.text()).toEqual('count is 1');
-    });
   });
 });

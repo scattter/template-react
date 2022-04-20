@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test Home page snapshot test 1`] = `
+exports[`test app about page should success render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -8,23 +8,20 @@ Object {
       <div
         class="center"
       >
-        <h1>
-          This is Home Page
-        </h1>
-        <strong>
-          state is 
-          0
-        </strong>
+        <span>
+          this is about page
+        </span>
+        <br />
         <button>
-          revert state
+          back home page with navigate(history.back) back
         </button>
         <br />
         <button>
-          click here to about page
+          back home page with navigate(history.push) jump
         </button>
         <br />
         <button>
-          click here to app list page
+          back home page with navigate(history.replace) jump
         </button>
       </div>
     </div>
@@ -33,23 +30,20 @@ Object {
     <div
       class="center"
     >
-      <h1>
-        This is Home Page
-      </h1>
-      <strong>
-        state is 
-        0
-      </strong>
+      <span>
+        this is about page
+      </span>
+      <br />
       <button>
-        revert state
+        back home page with navigate(history.back) back
       </button>
       <br />
       <button>
-        click here to about page
+        back home page with navigate(history.push) jump
       </button>
       <br />
       <button>
-        click here to app list page
+        back home page with navigate(history.replace) jump
       </button>
     </div>
   </div>,

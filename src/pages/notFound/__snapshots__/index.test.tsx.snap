@@ -1,57 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test Home page snapshot test 1`] = `
+exports[`test not found page should success render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="center"
-      >
-        <h1>
-          This is Home Page
-        </h1>
-        <strong>
-          state is 
-          0
-        </strong>
-        <button>
-          revert state
-        </button>
-        <br />
-        <button>
-          click here to about page
-        </button>
-        <br />
-        <button>
-          click here to app list page
-        </button>
-      </div>
+      <span>
+        this is 404 page
+      </span>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="center"
-    >
-      <h1>
-        This is Home Page
-      </h1>
-      <strong>
-        state is 
-        0
-      </strong>
-      <button>
-        revert state
-      </button>
-      <br />
-      <button>
-        click here to about page
-      </button>
-      <br />
-      <button>
-        click here to app list page
-      </button>
-    </div>
+    <span>
+      this is 404 page
+    </span>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

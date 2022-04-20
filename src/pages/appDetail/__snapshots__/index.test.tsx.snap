@@ -1,55 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test Home page snapshot test 1`] = `
+exports[`test app detail page should success render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="center"
+        class="app-detail center"
       >
-        <h1>
-          This is Home Page
-        </h1>
-        <strong>
-          state is 
-          0
-        </strong>
+        <span>
+          this is detail No.
+        </span>
         <button>
-          revert state
-        </button>
-        <br />
-        <button>
-          click here to about page
-        </button>
-        <br />
-        <button>
-          click here to app list page
+          back to app list
         </button>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="center"
+      class="app-detail center"
     >
-      <h1>
-        This is Home Page
-      </h1>
-      <strong>
-        state is 
-        0
-      </strong>
+      <span>
+        this is detail No.
+      </span>
       <button>
-        revert state
-      </button>
-      <br />
-      <button>
-        click here to about page
-      </button>
-      <br />
-      <button>
-        click here to app list page
+        back to app list
       </button>
     </div>
   </div>,

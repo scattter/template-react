@@ -3,7 +3,7 @@ import '@/index.scss';
 import React from 'react';
 import { useRoutes } from 'react-router-dom';
 
-import { routes } from './constant/router';
+import { routes } from './router';
 
 const App = () => {
   return useRoutes(routes);

@@ -30,6 +30,7 @@
     "@babel/preset-typescript": "^7.16.7",
     "@babel/runtime-corejs3": "^7.16.8",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
+    "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/react-hooks": "^7.0.2",
     "@types/enzyme": "^3.10.11",

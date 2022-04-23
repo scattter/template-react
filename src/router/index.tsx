@@ -19,7 +19,7 @@ export interface RouteConfig {
   showChannelSwitch?: boolean;
 }
 
-const lazyLoad = (children: ReactNode): ReactNode => {
+export const lazyLoad = (children: ReactNode): ReactNode => {
   return <Suspense fallback={<h1>Loading...</h1>}>{children}</Suspense>;
 };
 
